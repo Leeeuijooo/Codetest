@@ -23,7 +23,7 @@
 # arr1.sort()
 # print(arr1)
 
-
+# <우선순위큐에 튜플을 넣는 풀이>
 import heapq as hq
 import sys 
 input = sys.stdin.readline # 빠른 입출력을 위해 선언 
@@ -35,4 +35,22 @@ for _ in range(N):
         hq.heappush(pq,(abs(x),x))
     else:
         print(hq.heappop(pq)[1] if pq else 0) # 삼항 연산
-        
+
+
+
+# import heapq as hq
+# import sys 
+# input = sys.stdin.readline # 빠른 입출력을 위해 선언 
+# min_heap = [] # 1, 2, 3, 8 ,13 ,99, 242 / 양수를 보관
+# max_heap = [] # -1, -4, -10, -1042  절댓값이 작을 수록 큼 / 양수와는 다르게 / 음수를 보관
+# N = int(input())
+# for _ in range(N):
+#     x  = int(input())
+    
+#     if x:
+#         if x>0:
+#             hq.heappush(min_heap,x)
+#         else:
+#             hq.heappush(max_heap,x)
+#     else:
+#         min_heap[0] abs(max_heap[0])

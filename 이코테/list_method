@@ -1,0 +1,30 @@
+from os import remove
+from tkinter.tix import Tree
+from unittest import result
+
+
+a = [1,4,3]
+
+a.append(2)
+print(a)
+
+a.sort()
+print(a)
+
+a.sort(reverse=True)
+print(a)
+
+a.insert(2,5)
+print(a)
+
+
+a.append(5)
+a.append(5)
+a.append(5)
+a.append(5)
+a.sort()
+print(a)
+remove_set = {3,5} ## 집합 자료형 특정한 원소의 존재 유무만을 확인할때 효과적으로 사용할 수 있음
+result = [i for i in a if i not in remove_set]
+
+print(result)
